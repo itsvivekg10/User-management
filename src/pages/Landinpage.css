@@ -1,0 +1,105 @@
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* HEADER */
+.header {
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: #0b0b0b;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ghost-btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #e6e6e6;
+  color: black;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  padding: 4rem 0;
+}
+
+.hero-inner {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* FEATURE GRID */
+.features {
+  padding: 3rem 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  border-radius: 10px;
+  padding: 1.2rem;
+  border: 1px solid #f1f1f1;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid #f0f0f0;
+  padding: 1.4rem 0;
+  text-align: center;
+  color: #777;
+}

@@ -1,0 +1,38 @@
+/* NavBar.css */
+
+.navbar-header {
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+
+.navbar-nav-style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-title {
+  font-weight: 700;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.ghost-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
