@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ref, onValue } from "firebase/database";
-import { database } from "../firebaseConfig";
+ import { database } from "../fireBaseConfig";
+
 import UserForm from "../components/UserForm";
 
 const ViewUser = () => {
