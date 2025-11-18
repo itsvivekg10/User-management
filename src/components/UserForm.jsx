@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./UserForm.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { ref, push, set, get,  } from "firebase/database";
-import { database } from "../firebaseConfig";
+import { database } from "../fireBaseConfig";
 
 const UserForm = ({ initialData, viewMode }) => {
   const navigate = useNavigate();
