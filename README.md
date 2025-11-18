@@ -1,16 +1,80 @@
-# React + Vite
+src/
+├── assets/                # Static assets (images, icons, etc.)
+├── components/            # Reusable components
+│   ├── Loader.jsx
+│   ├── Loader.css
+│   ├── NavBar.jsx
+│   └── NavBar.css
+│   ├── UserForm.jsx
+│   └── UserForm.css
+├── pages/                 # Application pages
+│   ├── App.jsx
+│   ├── App.css
+├── firebaseConfig.js      # Firebase configuration
+├── index.css              # Global styles
+└── main.jsx               # Application entry point
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Add User – Fill out a form to add new users to the Firebase Realtime Database.
 
-Currently, two official plugins are available:
+View User – View individual user details.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Delete User – Remove users from both the UI and database.
 
-## React Compiler
+Live Data Updates – Real-time updates using Firebase onValue subscriptions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Error Handling – Displays errors and allows retrying data fetch.
 
-## Expanding the ESLint configuration
+Loader – Shows loading spinner during data fetch operations.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive UI – Works well on desktop and mobile screens.
+
+🛠 Technologies Used
+
+React.js – Frontend library for building UI components.
+
+Firebase Realtime Database – Backend for storing user data.
+
+React Router DOM – Routing between pages.
+
+CSS – Styling components and pages.
+
+Vite – Development and build tool for fast project setup.
+
+🚀 Installation
+
+Clone the repository
+
+git clone <repository-url>
+cd user-management-app
+
+
+Install dependencies
+
+npm install
+
+
+Configure Firebase
+
+Create a Firebase project at Firebase Console
+.
+
+Enable Realtime Database.
+
+Copy your Firebase config and replace in firebaseConfig.js:
+
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
+
+const firebaseConfig = {
+  apiKey: "<YOUR_API_KEY>",
+  authDomain: "<YOUR_AUTH_DOMAIN>",
+  databaseURL: "<YOUR_DATABASE_URL>",
+  projectId: "<YOUR_PROJECT_ID>",
+  storageBucket: "<YOUR_STORAGE_BUCKET>",
+  messagingSenderId: "<YOUR_SENDER_ID>",
+  appId: "<YOUR_APP_ID>"
+};
+
+const app = initializeApp(firebaseConfig);
+export const database = getDatabase(app);
