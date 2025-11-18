@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ref, onValue, remove } from "firebase/database";
 import NavBar from "../components/NavBar";
 import Loader from "../components/Loader";
+// import { database } from "../fireBaseConfig";
 import { database } from "../fireBaseConfig";
 import "../pages/HomePage.css";
 
